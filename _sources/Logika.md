@@ -3,7 +3,7 @@ title: Logika
 
 ---
 
-# Logika Matematika
+# Gerbang Logika
 ### 1. HUKUM DE MORGAN'S LAW'S
 Hukum De Morgan dalam teori himpunan adalah aturan yang menyatakan bahwa komplemen gabungan dua himpunan sama dengan irisan komplemen kedua himpunan tersebut. Hukum ini dapat dituliskan sebagai $\overline(A \cup B)=\bar{A}\cap\bar{B}$
 Hukum De Morgan juga dapat dituliskan sebagai

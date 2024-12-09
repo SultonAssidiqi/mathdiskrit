@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Sulton Math</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Teorema Bayes &#8212; Sulton Math</title>
   
   
   
@@ -58,12 +60,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Teorema-Bayes';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Deret dan Reduksi" href="Deretan-dan-reduksi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -85,7 +87,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -114,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -169,7 +169,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika-dan-Pembuktian.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html">Aljabar Boolean</a></li>
@@ -178,7 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Logika.html">Gerbang Logika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Analisa-graph.html">Graph</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Deretan-dan-reduksi.html">Deret dan Reduksi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Teorema-Bayes.html">Teorema Bayes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Teorema Bayes</a></li>
 
 </ul>
 
@@ -251,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTeorema-Bayes.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -263,6 +263,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Teorema-Bayes.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -296,7 +344,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -305,41 +355,107 @@
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Teorema Bayes</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Teorema Bayes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-teorema-bayes-percakapan-di-kereta-api">Contoh Teorema Bayes: Percakapan di Kereta Api</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="teorema-bayes">
+<h1>Teorema Bayes<a class="headerlink" href="#teorema-bayes" title="Link to this heading">#</a></h1>
+<p>—&gt; suatu formula yang menjelaskan bagaimana caranya memperbarui sebuah probabilitas dari suatu hipotesis saat kita udah menemukan suatu bukti atau petunjuk baru. Teori ini menyatakan seberapa jauh sih suatu derajat kepercayaan subjektif harus berubah secara rasional ketika ada bukti baru.</p>
+<div class="math notranslate nohighlight">
+\[
+P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
+\]</div>
+<p>Contoh singkat dari teorema bayes:</p>
+<p>Misalkan kawan Anda bercerita dia bercakap-cakap akrab dengan seseorang lain di atas kereta api. Tanpa informasi tambahan, peluang dia bercakap-cakap dengan perempuan adalah 50%. Sekarang misalkan kawan Anda menyebut bahwa orang lain di atas kereta api itu berambut panjang. Dari keterangan baru ini tampaknya lebih boleh jadi kawan Anda bercakap-cakap dengan perempuan, karena orang berambut panjang biasanya wanita. Teorema Bayes dapat digunakan untuk menghitung besarnya peluang bahwa kawan Anda berbicara dengan seorang wanita, bila diketahui berapa peluang seorang wanita berambut panjang.</p>
+</section>
+<section id="contoh-teorema-bayes-percakapan-di-kereta-api">
+<h1>Contoh Teorema Bayes: Percakapan di Kereta Api<a class="headerlink" href="#contoh-teorema-bayes-percakapan-di-kereta-api" title="Link to this heading">#</a></h1>
+<p>Misalkan kita ingin menghitung peluang bahwa kawan Anda berbicara dengan seorang wanita (<span class="math notranslate nohighlight">\(P(W|L)\)</span>) jika diketahui orang tersebut memiliki rambut panjang. Dengan menggunakan Teorema Bayes:</p>
+<div class="math notranslate nohighlight">
+\[
+P(W|L) = \frac{P(L|W) \cdot P(W)}{P(L)}
+\]</div>
+<p>Untuk menghitung <span class="math notranslate nohighlight">\(P(L)\)</span> (peluang seseorang berambut panjang), kita gunakan aturan probabilitas total:</p>
+<div class="math notranslate nohighlight">
+\[
+P(L) = P(L|W) \cdot P(W) + P(L|M) \cdot P(M)
+\]</div>
+<p><strong>Diketahui:</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P(W) = 0,5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(M) = 1 - P(W) = 0,5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(L|W) = 0,75\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(P(L|M) = 0,3\)</span></p></li>
+</ul>
+<p><strong>Langkah 1: Hitung <span class="math notranslate nohighlight">\(P(L)\)</span></strong>
+$<span class="math notranslate nohighlight">\(
+P(L) = (P(L|W) \cdot P(W)) + (P(L|M) \cdot P(M))
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+P(L) = (0,75 \cdot 0,5) + (0,3 \cdot 0,5)
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+P(L) = 0,375 + 0,15 = 0,525
+\)</span>$</p>
+<p><strong>Langkah 2: Hitung <span class="math notranslate nohighlight">\(P(W|L)\)</span></strong>
+$<span class="math notranslate nohighlight">\(
+P(W|L) = \frac{P(L|W) \cdot P(W)}{P(L)}
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+P(W|L) = \frac{0,75 \cdot 0,5}{0,525}
+\)</span><span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(
+P(W|L) = \frac{0,375}{0,525} \approx 0,714
+\)</span>$</p>
+<p><strong>Kesimpulan:</strong>
+Peluang bahwa kawan Anda berbicara dengan seorang wanita, jika diketahui orang tersebut berambut panjang, adalah sekitar <strong>71,4%</strong>.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -348,12 +464,39 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Deretan-dan-reduksi.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Deret dan Reduksi</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Teorema Bayes</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-teorema-bayes-percakapan-di-kereta-api">Contoh Teorema Bayes: Percakapan di Kereta Api</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

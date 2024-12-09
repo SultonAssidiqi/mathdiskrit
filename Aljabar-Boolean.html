@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to math king &#8212; Sulton Math</title>
+    <title>Aljabar Boolean &#8212; Sulton Math</title>
   
   
   
@@ -60,12 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Aljabar-Boolean';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Algoritma" href="Algoritma.html" />
+    <link rel="next" title="Gerbang Logika" href="Logika.html" />
+    <link rel="prev" title="Logika Matematika" href="Logika-dan-Pembuktian.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,16 +162,16 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to math king
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Logika-dan-Pembuktian.html">Logika Matematika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html">Aljabar Boolean</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Aljabar Boolean</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="Logika.html">Gerbang Logika</a></li>
@@ -253,7 +250,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAljabar-Boolean.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -283,7 +280,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Aljabar-Boolean.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -346,7 +343,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -357,11 +356,22 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to math king</h1>
+    <h1>Aljabar Boolean</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aljabar Boolean</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gerbang-logika">Gerbang Logika</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -371,24 +381,120 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-math-king">
-<h1>Welcome to math king<a class="headerlink" href="#welcome-to-math-king" title="Link to this heading">#</a></h1>
-<p>Matematika Diskret adalah cabang matematika yang mempelajari struktur diskret, yaitu objek-objek yang bersifat terpisah dan tidak berkesinambungan. Berbeda dengan kalkulus atau matematika kontinu, matematika diskret berfokus pada elemen-elemen seperti bilangan bulat, graf, himpunan, dan logika. Cabang ini sangat relevan dalam dunia teknologi, terutama dalam pengembangan algoritma, pemrograman komputer, kriptografi, dan kecerdasan buatan.</p>
-<p>Pilih dan klik materi yang ingin dipelajari.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Logika-dan-Pembuktian.html">Logika Matematika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html">Aljabar Boolean</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html#gerbang-logika">Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html#kesimpulan">Kesimpulan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Logika.html">Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Analisa-graph.html">Graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Deretan-dan-reduksi.html">Deret dan Reduksi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Teorema-Bayes.html">Teorema Bayes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Teorema-Bayes.html#contoh-teorema-bayes-percakapan-di-kereta-api">Contoh Teorema Bayes: Percakapan di Kereta Api</a></li>
+  <p>aljabar boolean dan gerbang logika
+Aljabar Boolean dan gerbang logika adalah konsep dasar dalam teknik komputer dan elektronika yang digunakan untuk analisis dan desain rangkaian digital. Berikut adalah penjelasan singkat tentang keduanya:</p>
+<section id="aljabar-boolean">
+<h1>Aljabar Boolean<a class="headerlink" href="#aljabar-boolean" title="Link to this heading">#</a></h1>
+<p>Aljabar Boolean adalah sistem aljabar yang digunakan untuk mengoperasikan nilai logika (true/false atau 1/0). Konsep utamanya mencakup operasi dasar berikut:</p>
+<ol class="arabic simple">
+<li><p><strong>AND (∧)</strong>: Hasilnya benar (1) jika kedua operand juga benar.</p>
+<ul class="simple">
+<li><p>Contoh: A ∧ B = 1 hanya jika A = 1 dan B = 1.</p></li>
 </ul>
+</li>
+<li><p><strong>OR (∨)</strong>: Hasilnya benar jika salah satu atau kedua operand benar.</p>
+<ul class="simple">
+<li><p>Contoh: A ∨ B = 1 jika A = 1, B = 1, atau keduanya.</p></li>
+</ul>
+</li>
+<li><p><strong>NOT (¬)</strong>: Operasi ini membalik nilai logika.</p>
+<ul class="simple">
+<li><p>Contoh: ¬A = 1 jika A = 0, dan ¬A = 0 jika A = 1.</p></li>
+</ul>
+</li>
+<li><p><strong>XOR (⊕)</strong>: Hasilnya benar jika satu operand benar dan yang lainnya salah.</p>
+<ul class="simple">
+<li><p>Contoh: A ⊕ B = 1 jika A dan B berbeda.</p></li>
+</ul>
+</li>
+<li><p><strong>NAND dan NOR</strong>: Operasi ini adalah negasi dari AND dan OR.</p>
+<ul class="simple">
+<li><p>NAND: A NAND B = 1 jika A ∧ B = 0.</p></li>
+<li><p>NOR: A NOR B = 1 jika A ∨ B = 0.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="gerbang-logika">
+<h1>Gerbang Logika<a class="headerlink" href="#gerbang-logika" title="Link to this heading">#</a></h1>
+<p>Gerbang logika adalah komponen dasar dalam rangkaian digital yang melakukan operasi logika berdasarkan aljabar Boolean. Berikut adalah beberapa jenis gerbang logika yang umum digunakan:</p>
+<ol class="arabic">
+<li><p><strong>Gerbang AND</strong>: Menghasilkan output tinggi (1) hanya jika semua input tinggi.</p>
+<ul>
+<li><p>Simbol: A ● B</p></li>
+<li><p>Tabel Kebenaran:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">|</span> <span class="n">B</span> <span class="o">|</span> <span class="n">Output</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">0</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">0</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">0</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">1</span>
+</pre></div>
 </div>
+</li>
+</ul>
+</li>
+<li><p><strong>Gerbang OR</strong>: Menghasilkan output tinggi jika salah satu atau kedua input tinggi.</p>
+<ul>
+<li><p>Simbol: A + B</p></li>
+<li><p>Tabel Kebenaran:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">|</span> <span class="n">B</span> <span class="o">|</span> <span class="n">Output</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">0</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Gerbang NOT</strong>: Menghasilkan output yang merupakan kebalikan dari input.</p>
+<ul>
+<li><p>Simbol: ¬A</p></li>
+<li><p>Tabel Kebenaran:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">|</span> <span class="n">Output</span>
+<span class="mi">0</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">1</span> <span class="o">|</span>  <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Gerbang NAND</strong>: Menghasilkan output rendah (0) hanya jika semua input tinggi.</p>
+<ul>
+<li><p>Simbol: (A ● B)’</p></li>
+<li><p>Tabel Kebenaran:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">|</span> <span class="n">B</span> <span class="o">|</span> <span class="n">Output</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Gerbang NOR</strong>: Menghasilkan output tinggi hanya jika semua input rendah.</p>
+<ul>
+<li><p>Simbol: (A + B)’</p></li>
+<li><p>Tabel Kebenaran:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">|</span> <span class="n">B</span> <span class="o">|</span> <span class="n">Output</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">1</span>
+<span class="mi">0</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">0</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>  <span class="mi">0</span>
+<span class="mi">1</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="kesimpulan">
+<h1>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
+<p>Aljabar Boolean dan gerbang logika adalah dasar dari sistem digital dan rangkaian logika. Mereka digunakan dalam desain komputer, perangkat keras, dan berbagai aplikasi elektronik lainnya. Jika Anda memiliki pertanyaan lebih lanjut atau ingin mendalami topik tertentu, silakan beri tahu!</p>
+<p>referensi:
+<a class="reference external" href="https://www.gramedia.com/literasi/gerbang-logika/">https://www.gramedia.com/literasi/gerbang-logika/</a>
+<a class="reference external" href="https://inovasi.ac.id/wiki/prinsip-gerbang-logika/">https://inovasi.ac.id/wiki/prinsip-gerbang-logika/</a></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,12 +527,21 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Logika-dan-Pembuktian.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Logika Matematika</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="Algoritma.html"
+       href="Logika.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Algoritma</p>
+        <p class="prev-next-title">Gerbang Logika</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -436,6 +551,25 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aljabar Boolean</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gerbang-logika">Gerbang Logika</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
